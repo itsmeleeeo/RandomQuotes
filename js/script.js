@@ -10,8 +10,10 @@ project 1 - A Random Quote Generator
 /*** 
  * quotes array 
 ***/
+//Here I triggered an random quote to display any information on the screen for the very first time
 window.addEventListener('load', getRandomQuote);
 
+//the object to store my quote index
 const citation = {
   quote: String,
   source: String
@@ -24,6 +26,8 @@ var src = ['Albert Einstein','Woody Allen', 'Sherlock Holmes', 'Thomas Edison', 
 /***
  * `getRandomQuote` function
 ***/
+
+//I am generating the random number according to my index size
 var randomNum = Math.floor(Math.random() * 6);
 var quoteView;
 var srcView;
